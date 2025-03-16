@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "commodity-order-book"
+version = "0.1.0"
+authors = [
+  { name = "User" },
+]
+description = "An order book system for trading commodities"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "flask>=2.0.0",
+    "flask-restful>=0.3.9",
+    "sqlalchemy>=2.0.0",
+    "pydantic>=2.0.0",
+    "flask-sqlalchemy>=3.0.0",
+    "python-dotenv>=1.0.0",
+    "flask-cors>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+]
